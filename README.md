@@ -18,7 +18,7 @@ The main goals of this project were:
 
 ---
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 - HTML5 – Structure
 - CSS3 – Styling
