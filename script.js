@@ -2,7 +2,7 @@ const cityInput = document.getElementById('cityInput');
 const searchBtn = document.getElementById('searchBtn');
 const weatherCard = document.getElementById('weatherCard');
 const buttonText = document.getElementById('buttonText');
-const apiKey ='8e2ac78273cb30e40735c78f37343183';
+const apiKey = 'YOUR_API_KEY_HERE'; // Your OpenWeatherMap API key here
 
 function getWeatherClass(description) {
     const desc = description.toLowerCase();
