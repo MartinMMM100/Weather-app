@@ -2,7 +2,7 @@ const cityInput = document.getElementById('cityInput');
 const searchBtn = document.getElementById('searchBtn');
 const weatherCard = document.getElementById('weatherCard');
 const buttonText = document.getElementById('buttonText');
-const apiKey = 'YOUR_API_KEY_HERE'; // Your OpenWeatherMap API key here
+const apiKey ='8e2ac78273cb30e40735c78f37343183';
 
 function getWeatherClass(description) {
     const desc = description.toLowerCase();
@@ -38,7 +38,6 @@ async function getWeather() {
         const cord = await GetCord(city);
         const resposne = await fetch(`https://api.openweathermap.org/data/2.5/forecast?lat=${cord.lat}&lon=${cord.lon}&appid=${apiKey}`);
         const data = await resposne.json();
-        console.log(data);
         const {main: {temp, humidity}, weather: [{description}]} = data.list.at(-1);
 
         document.getElementById('cityName').textContent = city;
